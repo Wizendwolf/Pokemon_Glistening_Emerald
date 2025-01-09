@@ -4281,6 +4281,7 @@ static const struct LevelUpMove sPorygonZLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_LOCK_ON),
     LEVEL_UP_MOVE(60, MOVE_ZAP_CANNON),
     LEVEL_UP_MOVE(65, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(100, MOVE_BOOMBURST)
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS

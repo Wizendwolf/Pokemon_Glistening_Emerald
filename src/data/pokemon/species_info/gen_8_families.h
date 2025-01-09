@@ -123,7 +123,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sThwackeyLevelUpLearnset,
         .teachableLearnset = sThwackeyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RILLABOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RILLABOOM}),
     },
 
     [SPECIES_RILLABOOM] =
@@ -134,7 +134,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_NORMAL),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Attack = 3,
@@ -196,7 +196,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_NORMAL),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Attack = 3,
@@ -364,7 +364,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sRabootLevelUpLearnset,
         .teachableLearnset = sRabootTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CINDERACE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CINDERACE}),
     },
 
     [SPECIES_CINDERACE] =
@@ -375,7 +375,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 119,
         .baseSpAttack  = 65,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Speed = 3,
@@ -438,7 +438,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 119,
         .baseSpAttack  = 65,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Speed = 3,
@@ -608,7 +608,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDrizzileLevelUpLearnset,
         .teachableLearnset = sDrizzileTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_INTELEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INTELEON}),
     },
 
     [SPECIES_INTELEON] =
@@ -619,7 +619,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 120,
         .baseSpAttack  = 125,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Speed = 3,
@@ -682,7 +682,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpeed     = 120,
         .baseSpAttack  = 125,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 45,
         .expYield = 265,
         .evYield_Speed = 3,
@@ -6207,7 +6207,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ZACIAN_HERO_OF_MANY_BATTLES] =
     {
         .baseHP        = 92,
-        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
+        .baseAttack    = 130,
         .baseDefense   = 115,
         .baseSpeed     = 138,
         .baseSpAttack  = 80,
@@ -6270,7 +6270,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ZACIAN_CROWNED_SWORD] =
     {
         .baseHP        = 92,
-        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 150 : 170,
+        .baseAttack    = 170,
         .baseDefense   = 115,
         .baseSpeed     = 148,
         .baseSpAttack  = 80,
@@ -6336,7 +6336,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ZAMAZENTA_HERO_OF_MANY_BATTLES] =
     {
         .baseHP        = 92,
-        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
+        .baseAttack    = 130,
         .baseDefense   = 115,
         .baseSpeed     = 138,
         .baseSpAttack  = 80,
@@ -6400,11 +6400,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ZAMAZENTA_CROWNED_SHIELD] =
     {
         .baseHP        = 92,
-        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
-        .baseDefense   = P_UPDATED_STATS >= GEN_9 ? 140 : 145,
+        .baseAttack    = 130,
+        .baseDefense   = 145,
         .baseSpeed     = 128,
         .baseSpAttack  = 80,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_9 ? 140 : 145,
+        .baseSpDefense = 145,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 10,
         .expYield = 360,

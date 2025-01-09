@@ -2484,16 +2484,15 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_AEGISLASH_SHIELD}),
     },
 
-#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 140 : 150)
 
     [SPECIES_AEGISLASH_SHIELD] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
-        .baseDefense   = AEGISLASH_MAIN_STAT,
+        .baseDefense   = 160,
         .baseSpeed     = 60,
         .baseSpAttack  = 50,
-        .baseSpDefense = AEGISLASH_MAIN_STAT,
+        .baseSpDefense = 160,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 250 : 234,
@@ -2553,10 +2552,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_AEGISLASH_BLADE] =
     {
         .baseHP        = 60,
-        .baseAttack    = AEGISLASH_MAIN_STAT,
+        .baseAttack    = 160,
         .baseDefense   = 50,
         .baseSpeed     = 60,
-        .baseSpAttack  = AEGISLASH_MAIN_STAT,
+        .baseSpAttack  = 160,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 45,
@@ -3992,8 +3991,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGoomyLevelUpLearnset,
         .teachableLearnset = sGoomyTeachableLearnset,
         .eggMoveLearnset = sGoomyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
-                                {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 40, SPECIES_SLIGGOO},
+                                {EVO_LEVEL_NIGHT, 40, SPECIES_SLIGGOO_HISUIAN}),
     },
 
     [SPECIES_SLIGGOO] =
@@ -4963,8 +4962,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sBergmiteLevelUpLearnset,
         .teachableLearnset = sBergmiteTeachableLearnset,
         .eggMoveLearnset = sBergmiteEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AVALUGG},
-                                {EVO_NONE, 0, SPECIES_AVALUGG_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 37, SPECIES_AVALUGG},
+                                {EVO_LEVEL_NIGHT, 37, SPECIES_AVALUGG_HISUIAN}),
     },
 
     [SPECIES_AVALUGG] =
